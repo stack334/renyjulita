@@ -1,0 +1,76 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+  min-height: 100vh;
+  background: linear-gradient(180deg, #ff66b3 0%, #ffcce6 100%);
+  background-attachment: fixed;
+  color: #5b0033;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 24px;
+  padding: 40px;
+  max-width: 720px;
+  width: 90%;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 24px rgba(255, 51, 153, 0.35);
+}
+
+.badge {
+  color: #80004d;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+.poem h1 {
+  color: #ff3399;
+  font-family: 'Playfair Display', serif;
+  font-size: 34px;
+  margin-bottom: 16px;
+}
+
+.poem p {
+  color: #80004d;
+  font-size: 18px;
+  margin-bottom: 8px;
+  line-height: 1.6;
+}
+
+.audio-controls {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.audio-controls button {
+  background-color: white;
+  color: #ff3399;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.audio-controls button:hover {
+  background-color: #ff3399;
+  color: white;
+}
+
+@media (max-width: 600px) {
+  .card {
+    padding: 24px;
+  }
+  .poem h1 {
+    font-size: 26px;
+  }
+  .poem p {
+    font-size: 16px;
+  }
+}

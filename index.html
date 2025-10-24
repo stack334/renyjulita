@@ -1,0 +1,73 @@
+<!-- File: renyjulita.html -->
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Renyjulita — Poem</title>
+<link rel="stylesheet" href="./style.css">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+<audio id="bg-music" autoplay loop>
+<source src="music.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+
+
+<main class="card">
+<header class="badge">Poem · Renyjulita</header>
+<article class="poem">
+<h1>Renyjulita</h1>
+<p class="line">you once were a little sun in a dim morning,</p>
+<p class="line">greeting everyone with warmth,</p>
+<p class="line">hiding your own fatigue behind a gentle smile.</p>
+
+
+<p class="spacer"></p>
+
+
+<p class="line">you listened to the world’s sorrow,</p>
+<p class="line">even when your own voice was lost in the noise.</p>
+<p class="line">you lit candles to guide others’ paths,</p>
+<p class="line">while your own feet wandered in the dark.</p>
+
+
+<p class="spacer"></p>
+
+
+<p class="line">but time has taught you something —</p>
+<p class="line">not every hand you help will hold you back with honesty.</p>
+<p class="line">sometimes, giving too much makes you disappear.</p>
+
+
+<p class="spacer"></p>
+
+
+<p class="line">now, Renyjulita has changed —</p>
+<p class="line">she looks into the mirror, not to find her scars,</p>
+<p class="line">but to recognize who she truly is.</p>
+<p class="line">she tends to herself, not out of pride,</p>
+<p class="line">but because she finally knows: she, too, deserves to be cared for.</p>
+</article>
+<div class="audio-controls">
+<button onclick="toggleMusic()" id="music-btn">⏸ Pause Music</button>
+</div>
+</main>
+
+
+<script>
+const music = document.getElementById('bg-music');
+const btn = document.getElementById('music-btn');
+function toggleMusic(){
+if(music.paused){
+music.play();
+btn.textContent = '⏸ Pause Music';
+}else{
+music.pause();
+btn.textContent = '▶️ Play Music';
+}
+}
+</script>
+</body>
+</html>
